@@ -1,0 +1,423 @@
+@import "../../styles/_variables.scss";
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+
+
+//Variables
+//-------------------------------------------
+$primary-font: 'Dancing Script', cursive;
+
+$primary-color: #006881;
+$secondary-color: #2d9cb8;
+$accent-color: #5174b7;
+$dark-color: #000000;
+$light-color: #ffffff;
+
+
+
+//Main container
+//-------------------------------------------
+
+.mainContainer {
+  min-height: 100vh;
+  width: 100%;
+}
+
+//Navbar
+//-------------------------------------------
+
+.navbarLogo {
+  border-radius: 50%;
+}
+
+.nav {
+  color: $primary-color;
+}
+
+.navLink {
+  color: $primary-color;
+  font-size: 1rem;
+  cursor: pointer;
+
+  &:hover {
+    color: rgba($dark-color, 0.8);
+    opacity: 0.8;
+    text-decoration: none;
+  }
+}
+
+//Main section
+//-------------------------------------------
+
+.infoCol {
+  overflow: scroll;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: solid 5px $primary-color;
+  background-image: url("/images/backgrounds/background_2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  //background-color: $primary-color;
+  height: 100%;
+
+  //Profile Image section
+  //--------------------------------------------------
+
+  .profileImageContainer {
+    // Imagen Circular
+    //-------------------------------------------
+    background-color: $secondary-color;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 25px 38px rgba(0, 0, 0, 0.1);
+    margin-top: 4rem;
+
+    // Imagen Trapecio
+    //-------------------------------------------
+    // clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%);
+    // background-color: $secondary-color;
+    // object-fit: cover;
+    // overflow: hidden;
+    // position: relative;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    // box-shadow: 0 25px 38px rgba(0, 0, 0, 0.1);
+    // margin-top: 4rem;
+  }
+
+  //Personal Information section
+  //----------------------------
+
+  .personalInfoName {
+    color: $dark-color;
+    font-size: 2.3rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    font-family: $primary-font;
+  }
+  .personalInfoTitle {
+    color: $dark-color;
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+  }
+  .personalInfoDescription {
+    color: $dark-color;
+    font-size: 1rem;
+    text-align: center;
+  }
+}
+
+//Column 2 section
+//-----------------
+
+// .infoCol2 {
+//   background-color: $primary-color;
+//   color: $secondary-color;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: stretch;
+// }
+
+//Image section
+//-------------
+
+.imageSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  height: auto;
+  overflow: hidden;
+
+  .backgroundImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+}
+
+//Education and Certificates section
+//----------------------------------
+
+.educationSection {
+  padding: $spacing-4;
+  width: 100%;
+  height: auto;
+  background-color: $light-color;
+
+  .educationText{
+    margin-bottom: $spacing-4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;}
+
+  .educationTitle {
+    font-family: $primary-font;
+    font-size: 2rem;
+    color: $primary-color;
+    text-align: center;
+    margin-bottom: $spacing-4;
+  }
+
+  .educationInstructions{
+    color: $dark-color;
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .educationItem {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    gap: $spacing-3;
+  }
+
+  .educationLogo {
+    border-radius: 15%;
+    border: solid 3px $primary-color;
+    &:hover {
+      cursor: pointer;
+      opacity: 0.8;
+    }
+  }
+
+  .educationItemTitle {
+    //margin-left: 20px;
+    color: $dark-color;
+    text-align: center;
+    font-size: 1rem;
+  }
+}
+
+//Work Experience and Services text
+//---------------------------------
+
+// .workExperience {
+//   background-color: $light-color;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   flex-direction: column;
+//   padding: $spacing-4;
+//   width: 100%;
+//   height: auto;
+// }
+
+// Work Experience and Services Image Gallery
+//----------------------------------------------
+
+
+
+.imageGallery {
+  
+  justify-content: center;
+  
+  padding: $spacing-1;
+  width: 100%;
+  height: auto;
+  background-color: $primary-color;
+}
+
+.imageGalleryText{
+  margin-bottom: $spacing-4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.imageGalleryTitle {
+  font-family: $primary-font;
+  font-size: 2rem;
+  color: $light-color;
+  text-align: center;
+  margin-bottom: $spacing-4;
+  padding-top: $spacing-4;
+}
+
+.imageGalleryInstructions {
+  color: $light-color;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.imageDescription {
+  color: $light-color;
+  text-align: center;
+  padding-top: $spacing-4;
+}
+
+.modalDescription {
+  color: $secondary-color;
+  text-align: center;
+}
+
+//Carousel
+//-------------------------------------------
+.imageCarousel{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  background-color: $light-color;
+
+  .imageCarouselContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: $spacing-4;
+    width: 100%;
+    height: auto;
+    background-color: $light-color;
+  }
+
+  .imageCarouselTitle{
+    font-family: $primary-font;
+    margin-bottom: $spacing-4;
+    text-align: center;
+    font-size: 2rem;
+    color: $primary-color;
+    padding-top: $spacing-4;
+  }
+
+  .imageCarouselInstructions{
+    color: $dark-color;
+    text-align: center;
+    font-size: 1rem;
+    padding-bottom: $spacing-4;
+  }
+
+}
+
+//Payment section
+//-------------------------------------------
+
+.paymentSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: $spacing-4;
+  width: 100%;
+  height: auto;
+  background-color: $light-color;
+}
+
+.paymentInfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: $spacing-4;
+  width: 100%;
+  height: auto;
+
+  .paymentText{
+    margin-bottom: $spacing-4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .paymentTitle {
+    font-family: $primary-font;
+    font-size: 2rem;
+    color: $primary-color;
+    text-align: center;
+    margin-bottom: $spacing-4;
+  }
+
+  .paymentInstructions {
+    color: $primary-color;
+    text-align: center;
+    font-size: 1rem;
+    
+  }
+
+  .bankInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: $spacing-8;
+    width: 100%;
+    height: auto;
+    border-radius: 15%;
+  }
+}
+
+//Video section
+//-------------------------------------------
+
+.videoPlayer {
+  background-color: $primary-color;
+  width: 100%;
+}
+
+//QR Code section
+//-------------------------------------------
+
+.qrCode {
+  background-color: $primary-color;
+  padding-top: $spacing-4;
+  width: 100%;
+  height: auto;
+
+  .scanText {
+    margin-top: 5px;
+    font-size: 1.2rem;
+    color: $light-color;
+    text-align: center;
+  }
+}
+
+//Footer
+//-------------------------------------------
+
+.footerCol {
+  width: 100%;
+  height: auto;
+  .footerClassName {
+    background-color: $light-color;
+    color: $primary-color;
+    padding: $spacing-4;
+
+    .containerFooterClassName {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      .textFooterClassName {
+        text-align: center;
+      }
+      .linkFooterClassName {
+        color: $primary-color;
+        text-decoration: none;
+        transition: $transition-fast;
+        text-align: center;
+
+        &:hover {
+          text-decoration: underline;
+          color: $secondary-color;
+        }
+      }
+    }
+  }
+}

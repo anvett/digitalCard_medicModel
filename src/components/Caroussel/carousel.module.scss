@@ -1,0 +1,49 @@
+@import "../../styles/variables.scss";
+
+// Variables (ajusta estos valores según tus necesidades)
+$breakpoint-md: 768px; // Ejemplo de breakpoint para tablets
+$breakpoint-lg: 992px; // Ejemplo de breakpoint para pantallas grandes
+
+// Estilos base para el carrusel
+.carouselImageContainer {
+  position: relative;
+  width: 100%;
+  height: auto; // Altura automática para dispositivos móviles
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: auto; // Mantiene la proporción de la imagen
+    object-fit: cover; // Asegura que la imagen cubra el área designada sin distorsionarse
+  }
+}
+
+// Media queries para ajustes responsivos
+@media (min-width: $breakpoint-md) {
+  .carouselImageContainer {
+    height: 500px; // Altura fija para tablets
+  }
+}
+
+@media (min-width: $breakpoint-lg) {
+  .carouselImageContainer {
+    height: 800px; // Altura fija para pantallas grandes
+    // Ajusta el tamaño del carrusel en pantallas grandes
+    max-width: 100%; // Limita el ancho del carrusel al 80% del contenedor padre
+    margin: 0 auto; // Centra el carrusel horizontalmente
+  }
+
+  
+}
+
+.captionTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: $dark-color;
+}
+
+.captionDescription {
+  font-size: 1rem;
+  color: $dark-color;
+}
