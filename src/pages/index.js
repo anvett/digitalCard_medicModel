@@ -108,7 +108,7 @@ export default function Modelo2() {
         <meta property="og:description" content="Tarjeta de presentación digital" />
         <meta
           property="og:image"
-          content="https://drnelsontinocov.businessdigicards.com/images/sharedimage.png"
+          content="https://drnelsontinocov.businessdigicards.com/images/shared_image.png"
         />
       </Head>
 
