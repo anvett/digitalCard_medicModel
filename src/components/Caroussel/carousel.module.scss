@@ -37,10 +37,11 @@ $breakpoint-lg: 992px; // Ejemplo de breakpoint para pantallas grandes
 }
 
 .captionTitle {
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: bold;
   margin-bottom: 1rem;
-  color: $dark-color;
+  color: $primary-color;
+  background-color: $light-color;
 }
 
 .captionDescription {

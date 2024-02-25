@@ -130,15 +130,15 @@ export default function Modelo2() {
                 >
                   <ProfileImage
                     src="/images/users/profile3.png"
-                    alt="Dr. Nelson Tinoco V"
-                    size={200}
+                    alt="Dr. Nelson Tinoco V."
+                    size={300}
                     profileImageContainerClassName={styles.profileImageContainer}
                   />
                 </motion.div>
               </section>
               <section>
                 <PersonalInfo
-                  name="Dr. Nelson Tinoco V"
+                  name="Dr. Nelson Tinoco V."
                   title="Médico Traumatólogo"
                   description="Médico Especialista en Ortopedia y Traumatología "
                   nameClassName={styles.personalInfoName}

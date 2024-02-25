@@ -19,7 +19,7 @@ const ImageCarousel = ({ images }) => {
             </div>
             <Carousel.Caption>
               <h3 className={styles.captionTitle} >{image.description}</h3>
-              <p className={styles.captionDescription}>{image.experience.join(", ")}</p>
+              {/* <p className={styles.captionDescription}>{image.experience.join(", ")}</p> */}
             </Carousel.Caption>
           </Carousel.Item>
         ))}
